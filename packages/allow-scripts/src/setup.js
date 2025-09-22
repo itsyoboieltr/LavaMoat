@@ -109,7 +109,7 @@ function addPackage(name) {
 
   if (existsSync('./.npmrc')) {
     cmd = 'npm'
-    cmdArgs = ['install', '-d', name]
+    cmdArgs = ['install', '-D', name]
   } else {
     cmd = 'yarn'
     cmdArgs = ['add', '-D', name]
